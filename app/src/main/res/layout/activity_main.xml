@@ -17,18 +17,18 @@
         android:textColor="@color/textBlue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <TextView
-        android:layout_marginTop="16dp"
-        android:layout_gravity="center_horizontal"
-        android:text="age"
-        android:padding="5dp"
-        android:textColor="@color/white"
-        android:background="@color/textOrange"
-        android:textAllCaps="true"
-        android:textSize="25sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@color/textOrange"
+        android:padding="5dp"
+        android:text="age"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
     <TextView
         android:layout_marginTop="16dp"
         android:gravity="center_horizontal"
@@ -38,6 +38,34 @@
         android:textColor="@color/textBlue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+    >
+    <DatePicker
+        android:datePickerMode="spinner"
+        android:id="@+id/date_picker"
+        android:layout_margin="16dp"
+        android:layout_gravity="center_horizontal"
+        android:calendarViewShown="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    <Button
+        android:layout_margin="16dp"
+        android:id="@+id/btn_calculate"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate" />
+
+    <TextView
+        android:layout_margin="16dp"
+        android:id="@+id/tv_seconds"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="123456 seconds" />
 
 
 </LinearLayout>
