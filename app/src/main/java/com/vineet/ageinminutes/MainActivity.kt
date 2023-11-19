@@ -16,11 +16,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        datePicker = findViewById(R.id.date_picker);
-        btnCalculate = findViewById(R.id.btn_calculate);
-        textViewSeconds = findViewById(R.id.tv_seconds);
-
-
+        datePicker = findViewById(R.id.date_picker)
+        btnCalculate = findViewById(R.id.btn_calculate)
+        textViewSeconds = findViewById(R.id.tv_seconds)
         btnCalculate.setOnClickListener {
             textViewSeconds.text = calculateSeconds(datePicker)
         }
